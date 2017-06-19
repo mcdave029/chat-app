@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parent-container {
+  padding: 20px;
+  height: calc(100% - 54px);
+  div#messages {
+    overflow: auto;
+    height: calc(100% - 74px);
+  }
+}
+
+textarea.no-margins {
+  margin: 0;
+}

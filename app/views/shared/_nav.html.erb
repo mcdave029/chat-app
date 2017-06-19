@@ -1,0 +1,18 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text">Chat App</li>
+      <li class="current-channel">Current chatroom: <%= yield(:chatroom) %> </li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li>
+        <a href="#">Hi!, <%= current_user.name.titleize %></a>
+        <ul class="menu vertical">
+          <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

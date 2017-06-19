@@ -13,7 +13,13 @@
 
   <body>
 
-    <%= yield %>
+    <%= render "shared/nav" if user_signed_in? %>
+
+    <div class="parent-container">
+
+      <%= yield %>
+
+    </div>
 
   </body>
 </html>
