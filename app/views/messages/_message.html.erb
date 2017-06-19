@@ -1,0 +1,9 @@
+<div class="media-object">
+  <div class="media-object-section">
+    <%= gravatar_for message.user %>
+  </div>
+  <div class="media-object-section">
+    <h4><%= message.user.name %> at <%= message.timestamp %> says:</h4>
+    <p><%= message.body %></p>
+  </div>
+</div>
